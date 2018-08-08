@@ -98,6 +98,5 @@ def get_average_age_for_season(data, season)
   ages.each do |num|
     ages << num.to_f
     ages
-    binding.pry
   end
 end
