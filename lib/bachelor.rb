@@ -74,6 +74,7 @@ def get_occupation(data, hometown)
       personalHash.each do |question, answer|
         if question == "hometown"
           if answer == hometown
+            fromHomeTown << personalHash[3]
             binding.pry
           end
         end
