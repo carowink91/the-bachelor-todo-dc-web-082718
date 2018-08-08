@@ -95,7 +95,10 @@ def get_average_age_for_season(data, season)
     end
   end
   ages
+  numAges = []
   i = 0
   while i < ages.length
     numAges << ages[i].to_f
+  end
+  numAges 
 end
