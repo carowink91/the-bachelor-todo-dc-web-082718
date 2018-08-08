@@ -56,7 +56,6 @@ def count_contestants_by_hometown(data, hometown)
         if question == "hometown"
           if answer == hometown
             fromHomeTown << hometown
-            binding.pry
           end
         end
       end
