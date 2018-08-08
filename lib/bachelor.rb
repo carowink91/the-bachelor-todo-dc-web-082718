@@ -74,7 +74,6 @@ def get_occupation(data, hometown)
       personalHash.each do |question, answer|
         if question == "hometown"
           question.find do |answer|
-          binding.pry
             answer == hometown
           end
         end
