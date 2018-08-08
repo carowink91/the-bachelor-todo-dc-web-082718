@@ -94,5 +94,6 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  ages.join(",").to_f
+  ages
+  binding.pry
 end
