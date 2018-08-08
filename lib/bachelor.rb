@@ -90,5 +90,4 @@ def get_average_age_for_season(data, season)
   season.each do |personalHash, pairs|
     binding.pry
   end
-  binding.pry
 end
