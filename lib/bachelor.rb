@@ -49,13 +49,14 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   fromHomeTown = []
+
   data.each do |season, contestants|
     contestants.each do |personalHash, pairs|
       personalHash.each do |question, answer|
         if question == "occupation"
           question.each do |answer|
             if answer == hometown
-              binding.pry
+              fromHomeTown << hometown
             end
           end
         end
