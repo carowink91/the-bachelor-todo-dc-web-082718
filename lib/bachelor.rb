@@ -52,7 +52,6 @@ def count_contestants_by_hometown(data, hometown)
   data.each do |season, contestants|
     binding.pry
   end
-  binding.pry
 end
 
 def get_occupation(data, hometown)
