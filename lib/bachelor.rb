@@ -54,11 +54,8 @@ def count_contestants_by_hometown(data, hometown)
     contestants.each do |personalHash, pairs|
       personalHash.each do |question, answer|
         if question == "occupation"
-          answer.each do |town|
-            binding.pry
-            if town == hometown
-              fromHomeTown << hometown
-            end
+          if answer == hometown
+            fromHomeTown << hometown
           end
         end
       end
