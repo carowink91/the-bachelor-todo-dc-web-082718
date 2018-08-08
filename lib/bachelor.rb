@@ -50,6 +50,9 @@ end
 def count_contestants_by_hometown(data, hometown)
   fromHomeTown = []
   data.each do |season, contestants|
+    season.each do |personalHash, pairs|
+      binding.pry
+    end
     binding.pry
   end
 end
