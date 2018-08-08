@@ -1,10 +1,55 @@
+require "pry"
+
 def get_first_name_of_season_winner(data, season)
-  # code here
+  contestantStatuses = []
+
+  season = data.fetch(season)
+  season.each do |personalHash, pairs|
+    personalHash.each do |key, value|
+      if key == "status"
+        contestantStatuses << value
+
+      end
+    end
+  end
+  winnerIndex = contestantStatuses.index("Winner")
+
+  winnerName = []
+
+  winnerHash = season[winnerIndex]
+  winnerHash.each do |question, answer|
+    if question == "name"
+      winnerName << answer
+    end
+  end
+
+  winnerName = winnerName.join(" ").split(" ")
+  winnerName = winnerName[0]
+  winnerName
 end
 
+
 def get_contestant_name(data, occupation)
-  # code here
+  contestantHash = {}
+
+  data.each do |season, contestants|
+    contestants.each do |personalHash, pairs|
+      personalHash.each do |question, answer|
+        if question == "occupation"
+          if answer == occupation
+            contestantHash = personalHash
+          end
+        end
+      end
+    end
+  end
+  contestantHash["name"]
 end
+
+
+
+
+
 
 def count_contestants_by_hometown(data, hometown)
   # code here
