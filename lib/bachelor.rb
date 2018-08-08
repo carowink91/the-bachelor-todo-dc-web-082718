@@ -101,6 +101,7 @@ def get_average_age_for_season(data, season)
   while i < ages.length
     sum << ages[i].to_f
     i += 1
+    biding.pry
   end
   binding.pry
 end
