@@ -55,7 +55,9 @@ def count_contestants_by_hometown(data, hometown)
         if question == "occupation"
           question.each do |answer|
             if answer == hometown
-        binding.pry
+            end
+          end
+        end
       end
     end
   end
