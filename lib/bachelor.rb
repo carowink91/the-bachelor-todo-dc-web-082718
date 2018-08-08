@@ -90,6 +90,7 @@ def get_average_age_for_season(data, season)
   season.each do |personalHash, pairs|
     personalHash.each do |key, value|
       if key == "age"
+        ages << value
         binding.pry
       end
     end
