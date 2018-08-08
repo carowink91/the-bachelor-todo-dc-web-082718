@@ -94,10 +94,8 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  num = "1"
-  ages.each do |x|
-    x.to_f
-    ages
-    binding.pry
-  end
+  ages
+  i = 0
+  while i < ages.length
+    ages[i] = ages[i].to_f
 end
