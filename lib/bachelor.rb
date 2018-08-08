@@ -97,6 +97,7 @@ def get_average_age_for_season(data, season)
   num = "1"
   ages.collect do |x|
     x.to_f
+    ages
     binding.pry
   end
 end
