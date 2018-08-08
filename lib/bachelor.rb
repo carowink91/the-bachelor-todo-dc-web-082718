@@ -75,6 +75,11 @@ def get_occupation(data, hometown)
         binding.pry
         if question == "hometown"
           if answer == hometown
+          end
+        end
+      end
+    end
+  end
 end
 
 def get_average_age_for_season(data, season)
