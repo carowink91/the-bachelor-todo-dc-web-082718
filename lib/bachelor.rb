@@ -75,7 +75,6 @@ def get_occupation(data, hometown)
         if question == "hometown"
           if answer == hometown
             fromHomeTown << personalHash["occupation"]
-            binding.pry
           end
         end
       end
