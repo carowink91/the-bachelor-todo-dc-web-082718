@@ -99,4 +99,5 @@ def get_average_age_for_season(data, season)
     ages << num.to_f
     ages
   end
+  ages
 end
