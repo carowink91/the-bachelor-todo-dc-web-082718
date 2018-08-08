@@ -73,7 +73,7 @@ def get_occupation(data, hometown)
     contestants.each do |personalHash, pairs|
       personalHash.each do |question, answer|
         if question == "hometown"
-          question.find do |answer|
+          answer.find do |answer|
             binding.pry
             answer == hometown
           end
