@@ -75,6 +75,7 @@ def get_occupation(data, hometown)
         if question == "hometown"
           binding.pry
           question.find do |answer|
+            binding.pry
             answer == hometown
           end
         end
