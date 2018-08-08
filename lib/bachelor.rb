@@ -97,6 +97,7 @@ def get_average_age_for_season(data, season)
   ages.join(",")
   ages.each do |num|
     ages << num.to_f
+    ages
     binding.pry
   end
 end
