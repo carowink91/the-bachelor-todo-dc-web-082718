@@ -53,7 +53,6 @@ def count_contestants_by_hometown(data, hometown)
     season.each do |personalHash, pairs|
       binding.pry
     end
-    binding.pry
   end
 end
 
