@@ -103,6 +103,10 @@ def get_average_age_for_season(data, season)
     i += 1
   end
   sum = 0
-  sumAges = numAges.each { |a| sum+=a }
-  sumAges
+  i = 0
+
+  while i < numAges.length
+    sum += numAges[i] + sum
+    i += 1
+  end
 end
